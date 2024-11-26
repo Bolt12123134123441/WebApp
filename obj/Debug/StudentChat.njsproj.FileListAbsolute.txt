@@ -1,0 +1,3 @@
+C:\Users\Bolt\source\repos\StudentChat\StudentChat\obj\Debug\StudentChat.njsproj.AssemblyReference.cache
+C:\Users\Bolt\source\repos\StudentChat\StudentChat\obj\Debug\StudentChat.njsproj.CoreCompileInputs.cache
+C:\Users\Bolt\source\repos\StudentChat\StudentChat\bin\Microsoft.NodejsTools.WebRole.dll

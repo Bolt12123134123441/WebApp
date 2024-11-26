@@ -1,0 +1,94 @@
+doctype html
+html
+    head
+        title Registration
+        style.
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+            }
+            .login-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .form-login {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 400px;  
+            }
+            label {
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            input {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            button {
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+            p {
+                text-align: center;
+                margin-top: 15px;
+            }
+            a {
+                color: #007BFF;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .view-message{
+                   display: inline-block;
+                margin-top: 30px;
+                padding: 15px 30px;
+                background-color: #4a90e2;
+                color: white;
+                text-decoration: none;
+                border-radius: 30px;
+                font-size: 18px;
+                text-align: center;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s, transform 0.3s ease;
+            }
+
+    body
+        .login-container
+            form.form-login(action="/auth/login", method="POST")
+                label(for="username") Username
+                input(type="text", name="username", required)
+                label(for="password") Password
+                input(type="password", name="password", required)
+                button(type="submit") Login
+                p Don't have an account yet? 
+               
+                    a.login(href="/auth/register") Register
+                a.view-message(href='/allMessages') View all messages
+
+
+
+
+
+
+
+                        
